@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-cookies.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css\main.css">
+
+<body ng-app="myApp">
+ <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+<div ng-view></div>
+
+<script src="js\main.js"></script>
+<script src="js\LoginController.js"></script>
+<script src="js\UserService.js"></script>
+<script src="js\RegisterController.js"></script>
+<script src="js\AuthenticationService.js"></script>
+<script src="js\QuizController.js"></script>
+<script src="js\DashboardController.js"></script>
+<script src="js\flashService.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<div class="col-md-6 col-md-offset-3">
+    <h2>Quiz</h2>
+    
+	
+	<div class="quizQuestionWrapper text-center">
+	
+		
+		<div ng-repeat = "quiz in vm.QuizQuestions" ng-show="$index == vm.currentIndex">
+			<div class="timerWrapper"><div class="timer">{{vm.timeRem[vm.currentIndex]}} seconds remaining</div></div>
+			<div class="question"><h2>{{quiz.question}}</h2></div><br>
+			<div class="optionsWrapper">
+				<div ng-repeat="option in quiz.options" class="optionWrapper">
+					<div class="btn btn-default options" ng-click="vm.pushOption($parent.$index, option, $event.target)">{{option}}</div>
+				</div>
+			</div>
+			<div class="btn btn-primary actionButton" ng-click="vm.save()">Save</div>
+			<div class="btn btn-primary actionButton" ng-click="vm.next()">Next</div>
+			
+		</div>
+		
+		<div class="submitBtnWrap"><div class="btn btn-primary submitButton" ng-show="vm.submitVisibility" ng-click="vm.submit()">Submit Quiz</div></div>
+		
+		
+	</div>
+</div>

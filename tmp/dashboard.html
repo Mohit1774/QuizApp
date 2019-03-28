@@ -1,0 +1,20 @@
+<div class="col-md-6 col-md-offset-3">
+	<h2>Dashboard</h2>
+	<div class="buttonDiv"><button class="btn btn-primary" ng-click="vm.redirectQuiz()">Take Quiz</button></div>
+	<table class="table recordstable" ng-if="vm.attemptedQuizs.length != 0">
+		<thead>
+		  <tr>
+			<th>Quiz Score</th>
+			<th>Attempted On</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr ng-repeat="attempt in vm.attemptedQuizs">
+			<td>{{attempt.score}}</td>
+			<td>{{attempt.time | date : "medium" }}</td>
+		  </tr> 
+		</tbody>
+	</table>
+	<div class="emptyMessage" ng-if="vm.attemptedQuizs.length === 0">No quizzes taken yet!</div>
+</div>
+

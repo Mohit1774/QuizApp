@@ -1,0 +1,45 @@
+.buttonDiv{
+	padding-bottom: 39px;
+	float: right;
+}
+
+.optionsWrapper {
+    padding-bottom: 50px;
+}
+
+.options{
+	width: 27%;
+}
+
+.optionWrapper{
+	padding-bottom: 2%;
+}
+
+.timerWrapper{
+	padding-bottom: 16px;
+	color: #337ab7;
+}
+
+.timer{
+	float: right;
+}
+
+.actionButton {
+	width: 23%;
+}
+
+.submitBtnWrap{
+	padding-top: 22%;
+}
+
+.submitButton{
+	width: 46%;
+	font-size: 2vw;
+}
+
+.emptyMessage {
+	padding-top: 29%;
+    font-size: 2vw;
+    color: #286090;
+    padding-left: 27%;
+}
